@@ -178,7 +178,7 @@ pub async fn root_get(configuration: &configuration::Configuration, path: &str) 
 
     let local_var_client = &local_var_configuration.client;
 
-    let local_var_uri_str = format!("{}/", local_var_configuration.base_path, path=crate::apis::urlencode(path));
+    let local_var_uri_str = format!("{}/{path}", local_var_configuration.base_path, path=crate::apis::urlencode(path));
     let mut local_var_req_builder = local_var_client.request(reqwest::Method::GET, local_var_uri_str.as_str());
 
     if let Some(ref local_var_apikey) = local_var_configuration.api_key {

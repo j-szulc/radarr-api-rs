@@ -12,6 +12,7 @@
 use reqwest;
 
 use crate::apis::ResponseContent;
+use crate::models::ColonReplacementFormat;
 use super::{Error, configuration};
 
 
