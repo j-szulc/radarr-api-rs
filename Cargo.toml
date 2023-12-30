@@ -1,6 +1,6 @@
 [package]
 name = "radarr-api-rs"
-version = "3.0.0"
+version = "3.0.1"
 authors = ["OpenAPI Generator team and contributors", "Jakub Szulc"]
 description = "Rust API wrapper for Radarr"
 license = "GPL-3.0"
