@@ -9,6 +9,7 @@ homepage = "https://github.com/j-szulc/radarr-api-rs"
 repository = "https://github.com/j-szulc/radarr-api-rs"
 readme = "README.md"
 keywords = ["radarr"]
+categories = ["api-bindings"]
 
 [dependencies]
 serde = "^1.0"
