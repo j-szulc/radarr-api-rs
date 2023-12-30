@@ -36,7 +36,7 @@ pub struct CommandResource {
     #[serde(rename = "ended", default, with = "::serde_with::rust::double_option", skip_serializing_if = "Option::is_none")]
     pub ended: Option<Option<String>>,
     #[serde(rename = "duration", skip_serializing_if = "Option::is_none")]
-    pub duration: Option<Box<crate::models::TimeSpan>>,
+    pub duration: Option<String>,
     #[serde(rename = "exception", default, with = "::serde_with::rust::double_option", skip_serializing_if = "Option::is_none")]
     pub exception: Option<Option<String>>,
     #[serde(rename = "trigger", skip_serializing_if = "Option::is_none")]

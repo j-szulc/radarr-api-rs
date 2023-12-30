@@ -246,8 +246,6 @@ pub mod tag_resource;
 pub use self::tag_resource::TagResource;
 pub mod task_resource;
 pub use self::task_resource::TaskResource;
-pub mod time_span;
-pub use self::time_span::TimeSpan;
 pub mod tmdb_country_code;
 pub use self::tmdb_country_code::TmdbCountryCode;
 pub mod tracked_download_state;

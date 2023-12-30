@@ -34,7 +34,7 @@ pub struct QueueResource {
     #[serde(rename = "sizeleft", skip_serializing_if = "Option::is_none")]
     pub sizeleft: Option<f64>,
     #[serde(rename = "timeleft", skip_serializing_if = "Option::is_none")]
-    pub timeleft: Option<Box<crate::models::TimeSpan>>,
+    pub timeleft: Option<String>,
     #[serde(rename = "estimatedCompletionTime", default, with = "::serde_with::rust::double_option", skip_serializing_if = "Option::is_none")]
     pub estimated_completion_time: Option<Option<String>>,
     #[serde(rename = "status", default, with = "::serde_with::rust::double_option", skip_serializing_if = "Option::is_none")]

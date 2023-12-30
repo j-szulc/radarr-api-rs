@@ -52,7 +52,7 @@ pub struct ImportListResource {
     #[serde(rename = "listOrder", skip_serializing_if = "Option::is_none")]
     pub list_order: Option<i32>,
     #[serde(rename = "minRefreshInterval", skip_serializing_if = "Option::is_none")]
-    pub min_refresh_interval: Option<Box<crate::models::TimeSpan>>,
+    pub min_refresh_interval: Option<String>,
 }
 
 impl ImportListResource {

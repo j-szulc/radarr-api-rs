@@ -28,7 +28,7 @@ pub struct TaskResource {
     #[serde(rename = "nextExecution", skip_serializing_if = "Option::is_none")]
     pub next_execution: Option<String>,
     #[serde(rename = "lastDuration", skip_serializing_if = "Option::is_none")]
-    pub last_duration: Option<Box<crate::models::TimeSpan>>,
+    pub last_duration: Option<String>,
 }
 
 impl TaskResource {
